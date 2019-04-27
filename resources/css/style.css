@@ -1,0 +1,356 @@
+/*----------------------------------*/
+/*BASIC SETUP*/
+/*----------------------------------*/
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color:#555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*---------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto; /*significa = top right bottom left*/
+}
+
+section {
+    padding: 80px 0; /* White-space 8px top e bottom 0px right e left*/
+}
+
+.box {
+    
+}
+
+
+/*---------------------------------*/
+/*HEADINGS*/
+/*---------------------------------*/
+
+h1, /*h1 e h2 terao as mesmas caracteristicas*/
+h2,
+h3    {
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(219, 219, 219);
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+/*Barra vermelha por baixo do h2*/
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:#f70000;
+    content: " ";
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+/*---PARAGRAPHS-----*/
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*----ICONS----*/
+.icon-big{
+    font-size: 300%;        
+    display: block;
+    color: #f70000;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------*/
+/*BUTTONS*/
+/*--------------------------------*/
+/*link: como o elemento/botao se parece em estado normal*/
+/*visited: como o elemento/botao se parece depois de ser visitado*/
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.5s, border 0.5s, color 0.5s;
+    transition: background-color 0.5s, border 0.5s, color 0.5s; /* cria transicao de cor. a cor do botao leva 0.5s para desaparecer*/   
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #f70000;
+    border: 1px solid #f70000;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #f70000;
+    color: #f70000;
+    
+}
+
+/*hover: como o elemento/botao se parece depois de passar o mouse nele*/
+.btn:hover,
+.btn:active{
+    background-color: #f70000;
+    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #f70000;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #f70000;
+    color: #fff;
+    
+}
+
+/*---------------------------------*/
+/*HEADER */
+/*---------------------------------*/
+header{
+    background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))),url(img/hero.jpeg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url(img/hero.jpeg); /*url adiciona imagem linear gradient deixa a imagem escura para facilitar a leitura do text*/
+    background-size: cover; /*tira o zoom da imagem*/
+    background-position: center;
+    height: 100vh;  /* preenche todo o view port com imagem*/
+    background-attachment: fixed;
+    
+}
+
+.logo{
+    height: 170px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    
+}
+
+.main-nav li{
+    display: inline-block; /*faz os elementos do nav ficarem lado a lado*/
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0; /*padding:top bottom*/
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent; /*a barra vermelha ficara transparent ate que passe o hover/mouse */
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #f70000;/*a barra vermelha fica visivel quando passar o mouse*/
+}
+
+.hero-text-box{
+    position: absolute; /* permite centralizar horizontalmente e verticalmente o text*/
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* traduz o elemento metade do width e height; top and left. faz o elemento ficar no meio*/
+}
+
+
+/*---------------*/
+/*--MEALS---*/
+/*---------------*/
+
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;    
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.4s;
+    transition: opacity 0.5s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.5s;
+    transition: transform 0.4s, opacity 0.5s, -webkit-transform 0.4s;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+
+
+/*---------------*/
+/*  FOOTER */
+/*---------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+    
+    
+    
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block; /*Para coloca-los na forma horizontal/inline*/
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 16 0%;
+}
+
+.ion-logo-facebook:hover{
+    color:#3b5998;
+}
+
+.ion-logo-twitter:hover{
+    color: #55acee;
+}
+
+.ion-logo-googleplus:hover{
+    color:#dc4e41;
+}
+
+.ion-logo-instagram:hover{
+    color:#517fa4;
+}
+
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+footer p {
+    color:#888;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: -40px;
+}
+
