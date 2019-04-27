@@ -100,8 +100,14 @@
     .contact-form { width: 100% }
     
     
-    .footer-nav li{
-        
+    .logo {
+        height: 100px;
+    }
+    
+    h1 {font-size: 25px;}
+    
+    .social-links li {
+        padding-right: 35px;
     }
     
     
