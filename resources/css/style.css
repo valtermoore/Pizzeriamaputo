@@ -234,6 +234,7 @@ header{
     background-color: rgba(255, 255, 255, 0.98);    /*para ser branco com um pouco de transparencia*/ 
     box-shadow: 0 2px 2px #efefef;  /*(horizontal) (vertical) (blur)*/
     z-index: 9999; /*para o elemento ficar no topo de todos elementos*/
+    color:#555;
 }
 
 .sticky .main-nav{ margin-top: 17px; }

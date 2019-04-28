@@ -45,7 +45,7 @@
     .plan-price { font-size: 250%; }
     
     
-    .contact-form { width: 80%; }
+   
     
 }
     
@@ -97,7 +97,6 @@
 @media only screen and (max-width: 480px){
     
     section { padding: 25px 0}
-    .contact-form { width: 100% }
     
     
     .logo {
@@ -107,9 +106,18 @@
     h1 {font-size: 25px;}
     
     .social-links li {
-        padding-right: 35px;
+        padding-right: 19px;
     }
     
     
+    
+    
+    
+    
+
+   
+
+
+
 }
 
