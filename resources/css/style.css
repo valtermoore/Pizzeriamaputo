@@ -178,6 +178,19 @@ header{
     margin-top: 20px;
 }
 
+.logo-black{
+    display: none; /*nao vai ser visivel no estado normal*/
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+
+/*---------------------------------*/
+/*MAIN NAV */
+/*---------------------------------*/
 .main-nav{
     float: right;
     list-style: none;
@@ -206,6 +219,41 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #f70000;/*a barra vermelha fica visivel quando passar o mouse*/
 }
+
+
+
+/*---------------------------------*/
+/*STICKY NAV */
+/*---------------------------------*/
+
+.sticky {
+    position: fixed;    /*o navegador vai ficar fixo quando fizer o scrolling na pagina*/
+    top: 0;     /*para comecar no top*/
+    left: 0;    /*para comecar na esquerda*/
+    width: 100%;    /*para ocupar todo width do browser*/
+    background-color: rgba(255, 255, 255, 0.98);    /*para ser branco com um pouco de transparencia*/ 
+    box-shadow: 0 2px 2px #efefef;  /*(horizontal) (vertical) (blur)*/
+    z-index: 9999; /*para o elemento ficar no topo de todos elementos*/
+}
+
+.sticky .main-nav{ margin-top: 17px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0; /*padding:top bottom*/
+    color: #555;
+
+}
+
+
+.sticky .logo { display: none; }        /*vai esconder o logo branco*/
+.sticky .logo-black { display: block; }     /*vai mostrar o logo preto*/
+
+
+
+
+
+
 
 .hero-text-box{
     position: absolute; /* permite centralizar horizontalmente e verticalmente o text*/
