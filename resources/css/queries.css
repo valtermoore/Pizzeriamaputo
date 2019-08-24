@@ -10,6 +10,8 @@
     }
     
     .row { padding: 0 2%; }
+
+    .main-nav{font-weight: 550;}
 }
 
 
@@ -44,7 +46,7 @@
     
     .plan-price { font-size: 250%; }
     
-    
+    .main-nav{font-weight: 550;}
    
     
 }
@@ -64,7 +66,24 @@
         margin: 0 0 4% 0;
     }
     
-    .main-nav { display: none; } /*Esconde todo o navegador*/
+    /*
+    .main-nav { font-size: 12px;
+        
+        font-weight: bold;
+        float: right;
+        list-style: none;
+        margin-top: -30px;
+    }*/ /*Esconde todo o navegador*/
+
+    .main-nav{display: none;}
+
+    .sticky .main-nav{font-size: 12px;
+        
+        font-weight: bold;
+        list-style: none;
+        margin-top: -40px;
+        display: inline-block;
+    }
     
     h1 {font-size: 180%;}
     h2 {font-size: 150%;}
@@ -107,6 +126,19 @@
     
     .social-links li {
         padding-right: 19px;
+    }
+
+    .sticky .main-nav{
+  
+        display: inline-block;
+        list-style: none;
+        margin-top: -40px;
+        margin-left: 50px;
+
+    }
+    .main-nav li{
+        font-size: 9px;
+        
     }
     
     

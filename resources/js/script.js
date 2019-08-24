@@ -1,11 +1,6 @@
 /* global $ */
 
 /* eslint-env jquery */
-let element;
-
-element = document.forms;
-
-console.log(element);
 
 $(document).ready(function() {
     
