@@ -200,7 +200,7 @@ header{
 
 .main-nav li{
     display: inline-block; /*faz os elementos do nav ficarem lado a lado*/
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .main-nav li a:link,
