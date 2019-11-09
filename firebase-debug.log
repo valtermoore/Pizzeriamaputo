@@ -1,0 +1,25 @@
+[debug] [2019-08-23T10:27:15.538Z] ----------------------------------------------------------------------
+[debug] [2019-08-23T10:27:15.541Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Valter\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-23T10:27:15.542Z] CLI Version:   7.2.2
+[debug] [2019-08-23T10:27:15.542Z] Platform:      win32
+[debug] [2019-08-23T10:27:15.542Z] Node Version:  v10.16.3
+[debug] [2019-08-23T10:27:15.543Z] Time:          Fri Aug 23 2019 12:27:15 GMT+0200 (South Africa Standard Time)
+[debug] [2019-08-23T10:27:15.543Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-23T10:27:15.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-23T10:27:15.552Z] > authorizing via signed-in user
+[debug] [2019-08-23T10:27:15.552Z] [iam] checking project pizzeria-maputo for permissions ["firebase.projects.get"]
+[debug] [2019-08-23T10:27:15.554Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pizzeria-maputo:testIamPermissions  
+
+[debug] [2019-08-23T10:27:18.357Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-23T10:27:18.361Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pizzeria-maputo  
+ 
+[debug] [2019-08-23T10:27:19.613Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Valter\Desktop\Pizzeria Maputo'...
+[info] 
+[debug] [2019-08-23T10:27:19.621Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pizzeria-maputo/webApps/-/config  
+ 
+[debug] [2019-08-23T10:27:20.659Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: /index.html
+[info] +  hosting: Local server: http://localhost:5000

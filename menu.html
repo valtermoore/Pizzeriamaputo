@@ -1,175 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" type="text/css" href="resources/css/menu-style.css">
-    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet"> <!--para os icons-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
 
+    <title>Menu</title>
+  </head>
+    <body>
 
+        <nav class="navbar navbar-fixed sticky-top navbar-expand-lg navbar-light bg-light sombra" >
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="resources/logo.png" style="width: 5rem;"></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSite">
 
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
 
-    <title>Menu-Pizzeria Maputo</title>
-</head>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos</a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactos</a>
+                        </li>
+                    </ul>
 
-<body>
-    <header>
-        <nav class="menu-nav">
-            <div class="row">
-               <a href="/index.html" title="pizzeria-logo"><img src="resources/img/logob.png" alt="pizzaria logo" class="logo"></a>
-                <a href="#" title="checkout-link"><i class="ion-md-cart icon" ></i></a>
+                    <ul class="navbar ml-auto"><!--vai deixar esta ul a direita-->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link navbar-toggler-icon" href="#" data-toggle="dropdown" id="navDrop"></a>
+                            
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Menu</a>
+                                <a class="dropdown-item" href="#">Localizacao</a>
+                                <a class="dropdown-item" href="#">Redes sociais</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
         </nav>
-    </header>  
-    
-    <section class="section-menu">
-        <div class="row">
-            <h1>MENU</h1>
-            <p class="long-copy"></p>
-        </div>
 
-        <div class="row">
-            <div class="col span-1-of-3">
-                <img src="resources/img/image6.jpg" >
-                
-                <div class="product-content-wrapper">
-                    <h2>Pizza Mexicana</h2>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-4"><!--text-center centraliza o texto/ my-5 aumenta a margin-top-->
+                    <h1 class="display-3 barra-vermelha">MENU</h1> <!--display-3 aumenta o tamanho da fonte-->
                 </div>
-                
-
-                
             </div>
 
-            <div class="col span-1-of-3">
-                <img src="resources/img/image7.jpg" >
+            <div class="row mb-5">
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
 
-                <div class="product-content-wrapper">
-                    <h2>Pizza de Ananás </h2>
-    
+                        <img src="resources/image1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pizza Portuguesa</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
+
+                    </div>
                 </div>
 
-            </div>
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
 
-            <div class="col span-1-of-3">
-                <img src="resources/img/image8.jpg" >
+                        <img src="resources/image2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">4 Estacoes</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
 
-                
-                <div class="product-content-wrapper">
-                    
-                    <h2>Pizza de Portuguesa </h2>
-        
+                    </div>
                 </div>
 
-            </div>
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
 
-       </div>    
-            
-        <div class="row">
-                
-            <div class="col span-1-of-3">
-                <img src="resources/img/image6.jpg" >
-                  
-                <div class="product-content-wrapper">
-                                    
-                    <h2>Pizza de Portuguesa </h2>
-                        
+                        <img src="resources/image3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pizza Mexicana</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
+
+                    </div>
                 </div>
-                
-            </div>
-            
-            
-            <div class="col span-1-of-3">
-                <img src="resources/img/image8.jpg" >
-                 
-                <div class="product-content-wrapper">
-                                   
-                    <h2>Pizza de Portuguesa </h2>
-                        
+
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
+
+                        <img src="resources/image4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pizza de Atum</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
+
+                    </div>
                 </div>
-                
-            </div>
-            
-            
-            <div class="col span-1-of-3">
-                <img src="resources/img/image8.jpg" >
-                 
-                <div class="product-content-wrapper">
-                                   
-                    <h2>Pizza de Portuguesa </h2>
-                        
+
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
+
+                        <img src="resources/image5.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pizza Vegetariana</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
+
+                    </div>
                 </div>
-                
-            </div>
-            
-            
-                
-        </div>    
-        
-        
-        <div class="row">
-            <div class="col span-1-of-3">
-                <img src="resources/img/image6.jpg" >
-                             
-                <div class="product-content-wrapper">
-                                               
-                    <h2>Pizza de Portuguesa </h2>
-                                    
+
+                <div class="col-sm-3"><!--divide o conteudo em tres colunas-->
+                    <div class="card mt-3" style="width: 15rem;">
+
+                        <img src="resources/image4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Pizza Italiana</h4>
+                            <h6 class="card-subtitle mb-2 text-muted text-center">300MT - 500MT</h6>
+                            <p class="card-text">Ingredientes: cebola, queijo mozzarela, chourico</p>
+                        </div>
+
+                    </div>
                 </div>
-                            
-             </div>
-
-
-            <div class="col span-1-of-3">
-                <img src="resources/img/image6.jpg" >
-                             
-                 <div class="product-content-wrapper">
-                                               
-                    <h2>Pizza de Portuguesa </h2>
-                                    
-                </div>
-                            
-            </div>
-        
-
-            <div class="col span-1-of-3">
-                <img src="resources/img/image6.jpg" >
-                             
-                <div class="product-content-wrapper">
-                                               
-                    <h2>Pizza Portuguesa </h2>
-                                    
-                </div>
-                            
-            </div>
-
-
-        </div>
-    
-
-    </section>
-
-
-
-    <footer>
-        <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav-menu">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">iOS App</a></li>
-                    <li><a href="#">Android App</a></li>
-                </ul>
             </div>
         </div>
-    </footer>
 
-</body>
+
+     
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
 </html>
