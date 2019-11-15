@@ -1,0 +1,118 @@
+.sombra{
+    box-shadow:0 2px 2px #efefef;
+}
+ul{
+    list-style-type: none;
+}
+
+.barra-vermelha:after{ 
+        display: block;
+        height: 2px;
+        background-color:#f70000;
+        content: " ";
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 3px;
+        text-align: center;
+        padding: 0;
+       
+    
+}
+
+/*---------------*/
+/*  FOOTER */
+/*---------------*/
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+  
+}
+
+.social-links{
+  list-style: none;
+  float: right;
+  
+  
+  
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block; /*Para coloca-los na forma horizontal/inline*/
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 16 0%;
+}
+
+.fa-facebook:hover{
+  color:#4267B2;
+}
+
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+
+.ion-logo-googleplus:hover{
+  color:#dc4e41;
+}
+
+.fa-instagram:hover{
+  color:#C13584;
+}
+
+
+.fa-facebook,
+.fa-twitter,
+.ion-logo-googleplus,
+.fa-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+
+footer p {
+  color:#888;
+  text-align:center;
+  margin-top: 10px;
+  margin-bottom: -40px;
+}
+
+.fontes{
+  font-size: 22px;
+}
