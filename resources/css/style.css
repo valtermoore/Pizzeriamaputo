@@ -33,6 +33,7 @@ section {
 }
 
 .box {
+    text-align: center;
     
 }
 
@@ -105,6 +106,7 @@ h3 {
     display: block;
     color: #f70000;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /*--------------------------------*/
